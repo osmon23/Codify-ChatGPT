@@ -1,8 +1,16 @@
 from rest_framework import serializers
+
 from .models import Message
 
 
 class MessageSerializer(serializers.ModelSerializer):
+    answer = serializers.ReadOnlyField()
+
     class Meta:
         model = Message
-        fields = '__all__'
+        fields = (
+            'id',
+            'question',
+            'answer',
+            'time',
+        )

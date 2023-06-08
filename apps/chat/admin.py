@@ -7,12 +7,10 @@ from .models import Message
 class MessageAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'text',
-        'time'
+        'question',
+        'answer',
+        'time',
     )
     search_fields = (
-        'id',
-    )
-    exclude = (
-        'time',
+        'question',
     )
