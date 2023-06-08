@@ -29,7 +29,7 @@ ALLOWED_HOSTS = env_config('ALLOWED_HOSTS').split()
 
 # Application definition
 MY_APPS = [
-
+    'apps.chat',
 ]
 
 THIRD_PARTY_APPS = [
