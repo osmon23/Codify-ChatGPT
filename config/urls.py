@@ -28,7 +28,7 @@ swagger_urlpatterns = [
 
 api_v1_urlpatterns = [
     path('schema/', include(swagger_urlpatterns)),
-    # path('chat', include('apps.chat.urls')),
+    path('chat', include('apps.chat.urls')),
 ]
 
 urlpatterns = [
